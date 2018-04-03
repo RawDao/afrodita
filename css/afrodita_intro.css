@@ -1,0 +1,67 @@
+﻿/*========== global style ==========*/
+
+@font-face{
+  	font-family: 'opensans-bold';
+  	src: url('../fonts/opensans-bold.woff') format('woff'), /* Pretty Modern Browsers */
+    	url('../fonts/opensans-bold.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face{
+	font-family: 'opensans-light-italic';
+  	src: url('../fonts/opensans-light-italic.woff') format('woff'), /* Pretty Modern Browsers */
+       	url('../fonts/opensans-light-italic.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face{
+	font-family: 'opensans-light';
+    src: url('../fonts/opensans-light.woff') format('woff'), /* Pretty Modern Browsers */
+       	url('../fonts/opensans-light.ttf') format('truetype'); /* Safari, Android, iOS */       
+}
+
+*, *::after, *::before{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;	
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+html{
+	height: 100%;
+}
+
+body{
+	height: 100%;
+	background: url('../images/afrodita_intro/body__bg.jpg') center center no-repeat fixed;
+	background-size: auto auto;	
+}
+
+/*========== wrapper style ==========*/
+
+.wrapper{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+}
+
+.wrapper .wrapper__img{
+	display: inline-block;
+	margin-bottom: 38px;
+}
+
+.wrapper .wrapper__button{
+	display: inline-block;
+	padding: 16px 20px;
+	background-color: #131415;
+	color: #fff;
+	font: bold 12px 'opensans-bold';
+	text-transform: uppercase;
+	text-decoration: none;
+	border-radius: 4px;
+}
