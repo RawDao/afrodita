@@ -1,0 +1,214 @@
+﻿/*========== afro_global.css 2018_04_12 global style ==========*/
+
+@font-face{
+  	font-family: 'opensans-bold';
+  	src: url('../fonts/opensans-bold.woff') format('woff'), /* Pretty Modern Browsers */
+    	url('../fonts/opensans-bold.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face{
+	font-family: 'opensans-light-italic';
+  	src: url('../fonts/opensans-light-italic.woff') format('woff'), /* Pretty Modern Browsers */
+       	url('../fonts/opensans-light-italic.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face{
+	font-family: 'opensans-light';
+    src: url('../fonts/opensans-light.woff') format('woff'), /* Pretty Modern Browsers */
+       	url('../fonts/opensans-light.ttf') format('truetype'); /* Safari, Android, iOS */       
+}
+
+*, *::after, *::before{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;	
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+body{
+	font: normal 18px 'opensans-light';
+	color: #221f1f;	
+}
+
+.wrapper{
+	max-width: 1056px;
+	margin: 0 auto;
+}
+
+/*========== header style ==========*/
+
+.header{	
+	background-color: #131415;
+	padding: 16px 0;
+	margin-bottom: 48px;
+}
+
+.header .wrapper{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: stretch;
+}
+
+.header__contact_telephone a{
+	font: bold 20px 'opensans-bold';
+	color: #fff;
+}
+
+.header__contact{
+	position: relative;
+}
+
+.header__worktime_text{
+	font: bold 14px 'opensans-bold';
+	color: #f89513;
+	text-decoration: underline;
+	text-align: right;
+}
+
+.header__contact_worktime{
+	cursor: pointer;	
+}
+
+.header__contact_worktime:hover .header__worktime_text{
+	color: #e9d4b9;
+}
+
+.header__worktime_schedule{
+	padding: 18px 20px;
+	background-color: #f6f6f6;	
+	border-radius: 4px;
+	position: absolute;
+	top: 78px;
+	left: -9999px;
+}
+
+.header__worktime_schedule::before{
+	content: "";
+	display: block;
+	left: 0;
+	right: 0;
+	height: 80px;
+	top: -80px;
+	position: absolute;
+}
+
+.header__schedule_dropdown{
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	background-color: #fff;
+	transform: rotate(45deg);
+	top: -16px;
+	right: 0;
+}
+
+.header__contact:hover .header__worktime_schedule{
+	left: 0;
+}
+
+.header__schedule_week{
+	font: bold 14px 'opensans-bold';
+	color: #f89513;
+	margin-bottom: 8px;
+}
+
+.header__schedule_lanch{
+	font-size: 14px;
+}
+
+/*========== footer style ==========*/
+
+.footer{
+	background-color: #131415;
+	color: #fff;
+	padding: 12px 0;
+	font-size: 14px;
+}
+
+.footer .wrapper{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+}
+
+.footer__working{
+	flex: 0 0 242px;
+}
+
+.footer__working .footer__working_par01 a{
+	font: bold 14px 'opensans-bold';
+	color: #fff;
+}
+
+.footer__working .footer__working_par02 a{
+	font: bold 14px 'opensans-bold';
+	color: #fff;
+	text-decoration: none;
+}
+
+.footer__social{
+	flex: 0 0 184px;	
+}
+
+.footer__social p{
+	font: bold 14px 'opensans-bold';
+	margin-bottom: 10px;	
+}
+
+.footer__social .footer__icon_win{
+	display: inline-block;
+	margin-right: 8px;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+
+.footer__social .footer__vk{
+	background: url('../images/afrodita/footer__icon.png') left top no-repeat; 
+}
+
+.footer__social .footer__vk:hover{
+	background: url('../images/afrodita/footer__icon.png') left bottom no-repeat; 
+}
+
+.footer__social .footer__fb{
+	background: url('../images/afrodita/footer__icon.png') -20px top no-repeat; 
+}
+
+.footer__social .footer__fb:hover{
+	background: url('../images/afrodita/footer__icon.png') -20px bottom no-repeat; 
+}
+
+.footer__social .footer__google{
+	background: url('../images/afrodita/footer__icon.png') -40px top no-repeat; 
+}
+
+.footer__social .footer__google:hover{
+	background: url('../images/afrodita/footer__icon.png') -40px bottom no-repeat; 
+}
+
+.footer__social .footer__tw{
+	background: url('../images/afrodita/footer__icon.png') -60px top no-repeat; 
+}
+
+.footer__social .footer__tw:hover{
+	background: url('../images/afrodita/footer__icon.png') -60px bottom no-repeat; 
+}
+
+.footer__social .footer__email{
+	background: url('../images/afrodita/footer__icon.png') -80px top no-repeat; 
+}
+
+.footer__social .footer__email:hover{
+	background: url('../images/afrodita/footer__icon.png') -80px bottom no-repeat; 
+}

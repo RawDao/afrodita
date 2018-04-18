@@ -1,124 +1,4 @@
-﻿/*========== global style ==========*/
-
-@font-face{
-  	font-family: 'opensans-bold';
-  	src: url('../fonts/opensans-bold.woff') format('woff'), /* Pretty Modern Browsers */
-    	url('../fonts/opensans-bold.ttf') format('truetype'); /* Safari, Android, iOS */
-}
-
-@font-face{
-	font-family: 'opensans-light-italic';
-  	src: url('../fonts/opensans-light-italic.woff') format('woff'), /* Pretty Modern Browsers */
-       	url('../fonts/opensans-light-italic.ttf') format('truetype'); /* Safari, Android, iOS */
-}
-
-@font-face{
-	font-family: 'opensans-light';
-    src: url('../fonts/opensans-light.woff') format('woff'), /* Pretty Modern Browsers */
-       	url('../fonts/opensans-light.ttf') format('truetype'); /* Safari, Android, iOS */       
-}
-
-*, *::after, *::before{
-	box-sizing: border-box;
-	padding: 0;
-	margin: 0;	
-}
-
-img{
-	max-width: 100%;
-	height: auto;
-}
-
-body{
-	font: normal 18px 'opensans-light';
-	color: #221f1f;	
-}
-
-.wrapper{
-	max-width: 1056px;
-	margin: 0 auto;
-}
-
-/*========== header style ==========*/
-
-.header{	
-	background-color: #131415;
-	padding: 16px 0;
-	margin-bottom: 48px;
-}
-
-.header .wrapper{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
-	align-content: stretch;
-}
-
-.header__contact_telephone a{
-	font: bold 20px 'opensans-bold';
-	color: #fff;
-}
-
-.header__contact{
-	position: relative;
-}
-
-.header__worktime_text{
-	font: bold 14px 'opensans-bold';
-	color: #f89513;
-	text-decoration: underline;
-	text-align: right;
-}
-
-.header__worktime_text:hover{
-	color: #efdccd;
-	cursor: pointer;
-}
-
-.header__worktime_schedule{
-	padding: 18px 20px;
-	background-color: #f6f6f6;	
-	border-radius: 4px;
-	position: absolute;
-	top: 78px;
-	left: -9999px;
-}
-
-.header__worktime_schedule::before{
-	content: "";
-	display: block;
-	left: 0;
-	right: 0;
-	height: 80px;
-	top: -80px;
-	position: absolute;
-}
-
-.header__schedule_dropdown{
-	position: absolute;
-	width: 32px;
-	height: 32px;
-	background-color: #fff;
-	transform: rotate(45deg);
-	top: -16px;
-	right: 0;
-}
-
-.header__contact:hover .header__worktime_schedule{
-	left: 0;
-}
-
-.header__schedule_week{
-	font: bold 14px 'opensans-bold';
-	color: #f89513;
-	margin-bottom: 8px;
-}
-
-.header__schedule_lanch{
-	font-size: 14px;
-}
+﻿/*========== afrodita.css 2018_04_03 global style ==========*/
 
 /*========== nav style ==========*/
 
@@ -169,3 +49,140 @@ body{
 
 /*========== main style ==========*/
 
+.main{
+	max-width: 880px;
+	margin-left: auto;
+	margin-bottom: 26px;
+}
+
+.main__h1{
+	font: bold 48px/38px 'opensans-bold';
+	color: #fff;
+	text-transform: uppercase;
+	background: url('../images/afrodita/main__top_bg.jpg') center center no-repeat;
+	padding: 153px 66px;
+	margin-bottom: 32px;
+}
+
+.main__info_part{
+	max-width: 696px;
+	margin-right: auto;
+}
+
+.main__infotxt{
+	margin-bottom: 64px;
+}
+
+.main__infotxt .main__infotxt_par{
+	line-height: 30px;
+	margin-bottom: 12px; 
+}
+
+.main__infotxt .main__infotxt_par .main__par_black{
+	font-weight: bold;
+	font-family: 'opensans-bold';
+}
+
+.main__infotxt .main__infotxt_ul{
+	margin-bottom: 12px;
+	list-style-type: none;
+}
+
+.main__infotxt .main__infotxt_ul li:before{
+	content: "";
+	display: inline-block;	
+	width: 3px;
+	height: 3px;
+	background-color: #221f1f;		
+	margin: 0 26px 4px 16px;	
+}
+
+.main__infotxt .main__par_blackbg{
+	padding: 16px 30px;
+	background-color: #221f1f;
+	color: #fff;
+}
+
+.main__infotxt .main__par_blackbg .main__par_white{
+	font-weight: bold;
+	font-family: 'opensans-bold';
+}
+
+/*========== main__partners style ==========*/
+
+.main__partners_h2{
+	font: bold 48px/38px 'opensans-bold';
+	color: #221f1f;
+	text-transform: uppercase;
+	margin-bottom: 46px;
+}
+
+.main__partners_top, .main__partners_bottom{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: stretch;
+	align-content: stretch;
+	margin-bottom: 46px;
+}
+
+.main__top_logo01{
+	width: 165px;
+	height: 65px;
+	background: url('../images/afrodita/main__partners01.png') center center no-repeat;
+}
+
+.main__top_logo01:hover{	
+	background: url('../images/afrodita/main__partners01_hover.png') center center no-repeat;
+}
+
+.main__top_logo02{
+	width: 165px;
+	height: 65px;
+	background: url('../images/afrodita/main__partners02.png') center center no-repeat;
+}
+
+.main__top_logo02:hover{	
+	background: url('../images/afrodita/main__partners02_hover.png') center center no-repeat;
+}
+
+.main__top_logo03{
+	width: 165px;
+	height: 65px;
+	background: url('../images/afrodita/main__partners03.png') center center no-repeat;
+}
+
+.main__top_logo03:hover{	
+	background: url('../images/afrodita/main__partners03_hover.png') center center no-repeat;
+}
+
+
+.main__top_logo04{
+	width: 165px;
+	height: 65px;
+	background: url('../images/afrodita/main__partners04.png') center center no-repeat;
+}
+
+.main__top_logo04:hover{	
+	background: url('../images/afrodita/main__partners04_hover.png') center center no-repeat;
+}
+
+.main__top_logo05{
+	width: 165px;
+	height: 65px;
+	background: url('../images/afrodita/main__partners05.png') center center no-repeat;
+}
+
+.main__top_logo05:hover{	
+	background: url('../images/afrodita/main__partners05_hover.png') center center no-repeat;
+}
+
+.main__top_logo06{
+	width: 165px;
+	height: 65px;
+	background: url('../images/afrodita/main__partners06.png') center center no-repeat;
+}
+
+.main__top_logo06:hover{	
+	background: url('../images/afrodita/main__partners06_hover.png') center center no-repeat;
+}
